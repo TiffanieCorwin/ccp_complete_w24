@@ -109,6 +109,15 @@ header li a.active {
       transform: none;
     }
 
+    button {
+      background-color: white; /* White background */
+      color: #000; /* Black text for better contrast (optional) */
+      padding: 10px 20px;
+      border: none; /* Remove border for a cleaner look */
+      border-radius: 4px; /* Rounded corners */
+      cursor: pointer;
+      margin-top: 10px;
+    }
 .skip {
     position: absolute;
     left: -10000px;
@@ -146,6 +155,7 @@ video{
     border-radius: 30px;
 }
 
+
 @media (prefers-reduced-motion: reduce) {
     .video {
       /* Stop the animation */
@@ -177,6 +187,18 @@ list-style-type: decimal;}
   .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  p{
+    font-size: larger;
+  }
+
+
+}
+@media screen and (min-width: 1024px){
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   p{

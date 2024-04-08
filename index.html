@@ -30,14 +30,27 @@
             <h2>Welcome!</h2>
             <p>Welcome to Tiffanie's Page, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
             <h3>Photo Gallery</h3>
-            <img src="images/tiffpic.jpg" width = "400" alt="Photo of a girl with glasses. She is smiling.">
+            <img src="images/tiffpic.jpg" width = "400" alt="Photo of a girl with glasses. She is smiling." >
         </div>
 
 <div></div>
             <!-- Jackie Wolf -->
 
         <div></div>
-        <div></div>
+        <h1> Ice Cream Poll</h1>
+        <h2>What's your favorite ice cream flavor?</h2>
+        <form id="ice-cream-form">
+            <input type="radio" id="flavor-chocolate" name="flavor" value="chocolate">
+            <label for="flavor-chocolate">Chocolate</label><br>
+            <input type="radio" id="flavor-vanilla" name="flavor" value="vanilla">
+            <label for="flavor-vanilla">Vanilla</label><br>
+            <input type="radio" id="flavor-strawberry" name="flavor" value="strawberry">
+            <label for="flavor-strawberry">Strawberry</label><br>
+            <br>
+            <button type="submit">Vote!</button>
+        </form>
+        <p id="results"></p>
+        <script src="java.js"></script>
         <div></div>
         <div></div>
         </div>
@@ -45,6 +58,11 @@
     <footer>
 		<p>Tiffanie Corwin copy 2024</p>
 	</footer>
+    <script>
+        window.addEventListener("load", () => {
+          console.log("This function is executed once the page is fully loaded");
+        });
+      </script>
 
 </body>
 </html>
